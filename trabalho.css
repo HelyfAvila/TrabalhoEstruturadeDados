@@ -1,0 +1,36 @@
+body {
+    background: black;
+    font: normal 15pt Arial;
+    
+}
+header{
+    color: #ff0b00;
+    text-align: center; /*centralizando texto*/
+}
+section{
+    background:#ffe599; /*fundo*/
+    border-radius: 10px; /*Raio da borda*/
+    padding: 45px; /*Espaçamento*/
+    width: 500px; /*largura */
+    margin: auto; /*para centralizar, a margem*/
+    box-shadow: 3px 3px 10 px rgba(0, 0, 0, 0.363); /*1-deslocamento lateral, 2- deslocamento vertical, 3- espalhamento, 4- cor (sombreamento)*/
+    text-align:center;
+    font-size: 18px;
+    word-spacing: -2px;
+}
+footer{
+    color: #ff0b00;
+    text-align: center;
+    font-style: italic;
+
+}div{
+    text-align: center;
+}
+.menu{
+    word-spacing: -2px;
+    text-align: left;
+    
+}
+.escolhaMenu{
+    text-align: left;
+}
