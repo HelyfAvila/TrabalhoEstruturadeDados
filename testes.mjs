@@ -1,14 +1,7 @@
 const alunos = [];
 function cadastrarAluno() {
-    let opcao = document.getElementById('opcao');
-    let opc = Number(opcao.value);
     let res = document.getElementById('res');
     
-    if(opcao.value.length == 0){
-        alert(`[ERRO] Digite um valor válido por favor!`) 
-        opcao.value = ""
-        return; 
-    }else if(opc == 1){
        alert('Cadastramento de alunos');
         while( alunos.length < 2){
             let nome = prompt('Cadastre um novo aluno. Informe o nome:');
@@ -58,12 +51,30 @@ function cadastrarAluno() {
                         Média: ${alunos[i].media}<br>
                         Resultado: ${alunos[i].resultado}<br><br>`;
         }
-    }
+    
 }
     function nomesCrescente() {
         alert("kdskdjskj")
     }
 
-    function escolherOpcao(opc){
+    function escolherOpcao(){
+        let opcao = document.getElementById('opcao');
+        let opc = Number(opcao.value);
+        
+        if(opcao.value.length == 0){
+            alert(`[ERRO] Digite um valor válido por favor!`) 
+            opcao.value = ""
+            res.innerHTML = ""
+            return; 
+        }else if(opc === 1){
+            res.innerHTML = ""
+            cadastrarAluno();
+        }else if(opc === 2){
+            res.innerHTML = ""
+            nomesCrescente();
+        }else if(opc === 3){
+            res.innerHTML = ""
+            
+        }
     }
     
