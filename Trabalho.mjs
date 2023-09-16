@@ -1,16 +1,18 @@
+const alunos = [];
+
 function processar(){
-    let opcao =  document.getElementById('opcao');
+    let opcao = document.getElementById('opcao');
+    let opc = Number(opcao.value);
+    if(opcao.value.length == 0){
+        alert(`[ERRO] Digite um valor válido por favor!`) 
+        opcao.value = ""
+        return; 
+    }else if(opc == 1){
+        alert('Cadastre os alunos');
+       
+            
+    }
 }
 
-//Função de adicionar aluno 
-function cadastraAluno(nome, ra, idade, sexo, media, resultado){
-    let aluno = {
-        NOME: nome,
-        RA: ra,
-        IDADE: idade,
-        SEXO: sexo,
-        MÉDIA: media, 
-        RESULTADO: resultado
-    };
-    alunos.push(aluno);
-}
+
+
